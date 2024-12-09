@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #bdf8b8;
+}
+
+header{
+    background-image: url(imagem/folhas.jpg);
+    background-size: cover;
+  background-position: center;
+}
+
+nav{
+    text-align: center;
+    padding: 10px;
+}
+
+a {
+    color: rgb(0, 0, 0);
+    font-family: "Anton SC", sans-serif;
+    padding: 10px;
+}
+
+ul a:nth-child(1):hover {
+    background-image: url(imagem/zebra.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+ul a:nth-child(2):hover {
+    background-image: url(imagem/girafa.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+ul a:nth-child(3):hover {
+    background-image: url(imagem/escamas.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+ul a:nth-child(4):hover {
+    background-image: url(imagem/onça.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+ul a:nth-child(5):hover {
+    background-image: url(imagem/penas.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+color{
+    color: blue;
+}
+
+div#conta{
+    width: 200px;          
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border: 2px solid #000000;
+    background-color: #fff;  
+    border-radius: 20px;
+    background-image: url(imagem/fundo.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+h1{
+    border: 1px solid;
+    margin: 10px;
+    text-align: center;
+    background-image: url(imagem/fundo.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+p {
+    font-family:"Anton SC", sans-serif;
+    text-align: center;
+}
+
+
+
+.container {
+    display: flex;
+    justify-content: center; 
+    gap: 20px;
+    padding: 50px;               
+}
+
+.item {
+    text-align: center;
+}
+
+.quadrado {
+    width: 200px;          
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border: 2px solid #000000;
+    background-color: #fff;  
+    border-radius: 20px;
+}
+
+.item {
+    text-align: center;
+    position: relative; 
+}
+
+.quadrado img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;    
+    position: relative;  
+}
+
+.texto {
+    font-size: 14px;
+    color: #333;
+    margin-top: 5px;         
+}
+
+.info {
+    position: absolute;
+    top: 3;;
+    left: 1%;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 5px;
+    font-size: 12px;
+    text-align: left;
+    width: 250px; 
+    opacity: 0; 
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform: translateX(-10px); 
+    line-height: 20px;
+    z-index: 1;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.quadrado:hover .info {
+    opacity: 1; 
+    transform: translateX(0); 
+    
+}
+
+.aviso {
+    position: absolute;
+    top: 0;;
+    left: 1%;
+    background-color: rgb(255, 0, 0);
+    color: white;
+    padding: 5px;
+    font-size: 12px;
+    text-align: left;
+    width: 150px; 
+    opacity: 0; 
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform: translateX(-10px); 
+    line-height: 20px;
+    z-index: 1;
+}
+
+.quadrado:hover .aviso {
+    opacity: 1; 
+    transform: translateX(0); 
+    
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .quadrado {
+        width: 100%; 
+        height: auto;
+    }
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+
+.curiosidades {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: #fff;
+    border: 2px solid #000;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap;
+}
+
+.foto img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.text h2 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.text ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+.text li {
+    margin-bottom: 5px;
+}
